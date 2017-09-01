@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        form {
+            border: 3px solid #f1f1f1;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .titlename{
+          color: rgb(9, 53, 213);
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 20%;
+            float: right;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+
+        img.avatar {
+            width: 10%;
+            border-radius: 50%;
+        }
+
+        .container {
+          margin-top: 20px;
+            padding: 16px;
+            height: 100%;
+        }
+
+        .footer {
+          margin-top: 20px;
+          padding: 16px;
+          font-family: fantasy;
+          text-align: center;
+        }
+
+        span.psw {
+          text-align: center;
+            padding-top: 16px;
+        }
+        /* Change styles for span and cancel button on extra small screens */
+
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+            }
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <h1 class="titlename">Login / SignUp Here </h1>
+
+    <form action="E:\mysite\visitindia\home.html">
+        <div class="imgcontainer">
+            <img src="http://eadb.org/wp-content/uploads/2015/08/profile-placeholder.jpg" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+            <label><b class="titlename">Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label><b class="titlename">Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <input type="checkbox" checked="checked"> Remember me
+        </div>
+
+        <div class="footer" style="background-color:#f1f1f1">
+            <span class="psw">Not Registered Yet! &nbsp; <a href="#">SignUp?</a></span><br><br>
+            <span class="psw">Forgot &nbsp; <a href="#">Password?</a></span>
+
+        </div>
+    </form>
+
+</body>
+
+</html>
